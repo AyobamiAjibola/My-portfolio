@@ -1,0 +1,13 @@
+$mainColor:  #DC143C;
+$topbarColor:  #262728;
+$textColor: #262728;
+$paraColor: #585858;
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
+

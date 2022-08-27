@@ -1,0 +1,17 @@
+.projectlist {
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .projectlist {
+    margin-right: 20px;
+  }
+}
+.projectlist.active {
+  background-color: #15023a;
+  color: white;
+}/*# sourceMappingURL=projectlist.css.map */

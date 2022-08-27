@@ -1,0 +1,134 @@
+@import "../../../global.scss";
+
+.about {
+    background-color: white;
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left{
+        flex: 0.5;
+        overflow: hidden;
+
+        .imgContainer{
+            width: 700px;
+            height: 700px;
+            background-color: #EEEEEE;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+            margin-right: 20px;
+
+            @include mobile{
+                align-items: flex-start;
+                width: 500px;
+                height: 500px;
+            }
+
+            img{
+                width: 100%;
+
+                @include mobile{
+                    height: 60%;
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .right{
+        flex: 0.5;
+        position: relative;
+        border-left: 1px solid #DDDDDD;
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            // padding-left: 30px;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+
+            @include mobile {
+                padding-left: 0;
+                align-items: center;
+            }
+
+            .wrap{
+                width: 70%;
+                margin-left: 20px;
+
+                @include mobile{
+                    width: 80%;
+                    margin-top: 10px;
+                }
+
+                h3{
+                    font-size: 70px;
+                    padding-top: 0;
+                    margin-bottom: 8px;
+                    color: $textColor;
+
+                    @include mobile {
+                        font-size: 20px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                h6{
+                    font-size: 20px;
+                    color: $mainColor;
+                    margin-top: 1.5em;
+                    margin-bottom: 1.5em;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 200;
+                    margin-bottom: 5px;
+                    text-align: justify;
+                    display: block;
+                    line-height: 1.4;
+                    color: $paraColor;
+
+                    @include mobile {
+                        font-size: 15px;
+                    }
+                }
+
+                .contact-me{
+                    margin-top: 20px;
+                }
+            }
+        }
+        .arrow{
+            position: absolute;
+            bottom: 30px;
+            left: 40%;
+
+            .effect{
+                border: solid;
+                border-width: 0.2px;
+                border-radius: 50%;
+                border-color: $paraColor;
+                padding: 8px;
+                animation: arrowBlink 1s infinite;
+
+                &:hover{
+                    border-color: $mainColor;
+                    animation: none;
+                }
+            }
+
+            @keyframes arrowBlink {
+                100%{
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+}

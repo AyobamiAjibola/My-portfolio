@@ -1,0 +1,133 @@
+.about {
+  background-color: white;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about .left {
+  flex: 0.5;
+  overflow: hidden;
+}
+.about .left .imgContainer {
+  width: 700px;
+  height: 700px;
+  background-color: #EEEEEE;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .about .left .imgContainer {
+    align-items: flex-start;
+    width: 500px;
+    height: 500px;
+  }
+}
+.about .left .imgContainer img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .about .left .imgContainer img {
+    height: 60%;
+    width: 90%;
+  }
+}
+.about .right {
+  flex: 0.5;
+  position: relative;
+  border-left: 1px solid #DDDDDD;
+}
+.about .right .wrapper {
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .about .right .wrapper {
+    padding-left: 0;
+    align-items: center;
+  }
+}
+.about .right .wrapper .wrap {
+  width: 70%;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .about .right .wrapper .wrap {
+    width: 80%;
+    margin-top: 10px;
+  }
+}
+.about .right .wrapper .wrap h3 {
+  font-size: 70px;
+  padding-top: 0;
+  margin-bottom: 8px;
+  color: #262728;
+}
+@media (max-width: 768px) {
+  .about .right .wrapper .wrap h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+.about .right .wrapper .wrap h6 {
+  font-size: 20px;
+  color: #DC143C;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.about .right .wrapper .wrap p {
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 5px;
+  text-align: justify;
+  display: block;
+  line-height: 1.4;
+  color: #585858;
+}
+@media (max-width: 768px) {
+  .about .right .wrapper .wrap p {
+    font-size: 15px;
+  }
+}
+.about .right .wrapper .wrap .contact-me {
+  margin-top: 20px;
+}
+.about .right .arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 40%;
+}
+.about .right .arrow .effect {
+  border: solid;
+  border-width: 0.2px;
+  border-radius: 50%;
+  border-color: #585858;
+  padding: 8px;
+  -webkit-animation: arrowBlink 1s infinite;
+          animation: arrowBlink 1s infinite;
+}
+.about .right .arrow .effect:hover {
+  border-color: #DC143C;
+  -webkit-animation: none;
+          animation: none;
+}
+@-webkit-keyframes arrowBlink {
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes arrowBlink {
+  100% {
+    opacity: 0.2;
+  }
+}/*# sourceMappingURL=about.css.map */
