@@ -4,6 +4,10 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 import Home from "./components/pages/home/Home";
 
 function App() {

@@ -36,6 +36,11 @@
   font-size: 15px;
   font-weight: 600;
 }
+.topbar .wrapper .left .socials {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
 .topbar .wrapper .right {
   display: flex;
   align-items: center;

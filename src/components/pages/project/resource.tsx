@@ -47,7 +47,7 @@ export const data = [
         id: 5,
         project_title: "rimplay",
         work_done: "My primary responsibility as a team member who oversees the project's use of AWS is to establish, develop, and maintain the project's cloud infrastructure.",
-        desc: "",
+        desc: "Rimplay is a video streaming application",
         repo: "",
         status: "in progress",
         website: "www.rimplay.com",
@@ -57,18 +57,18 @@ export const data = [
     {
         id: 6,
         project_title: "PO-Smart-App",
-        work_done: "I am part of the development team that is responsible for the backend development of this project. The stack we are using includes NodeJS and express for the server side, Typescript, JOI for server side validation, MongoDB, and JWT.",
-        desc: "",
+        work_done: "I am part of the development team that is responsible for the backend development of this project. The stack we are using includes NodeJS and express for the server side, Typescript, JOI for server side validation, MongoDB for the database, and JWT for authentication and authorization.",
+        desc: "This solution validates voting results been posted my INEC officials against the results posted by LP party agents. Its simply an app for the delegates to report live happenings of the election realtime for transparency sake.",
         repo: "https://github.com/PO2023/POapp.git",
         status: "in progress",
         website: "",
-        img: "",
-        img2: ""
+        img: "assets/po.jpg",
+        img2: "assets/po2.jpg"
     },
     {
         id: 7,
         project_title: "Foodo",
-        work_done: "",
+        work_done: "I'm a lead developer on the project's development team, and part of my responsibilities is to create the models, apis, and backend code. Along with overseeing the development of the mobile apps, I am also in charge of the web apps. The stack we are using for this project includes, Typescript, Node and express for server side, Joi for validation, Sequelize PSQL for the database, JWT for authentication and authorization, ReactJS and MUI for UI, and flutter for the mobile apps",
         desc: "Foodo is a food delivery app.",
         repo: "https://github.com/AyobamiAjibola/Foodo.git",
         status: "in progress",
@@ -76,4 +76,70 @@ export const data = [
         img: "",
         img2: ""
     },
+]
+
+export const skill = [
+    {
+        id: 1,
+        name: "Javascript",
+        grade: 80
+    },
+    {
+        id: 2,
+        name: "ReactJS",
+        grade: 85,
+    },
+    {
+        id: 3,
+        name: "NodeJS",
+        grade: 80
+    },
+    {
+        id: 4,
+        name: "HTML",
+        grade: 95
+    },
+    {
+        id: 5,
+        name: "CSS/SCSS",
+        grade: 90
+    },
+    {
+        id: 6,
+        name: "Typescript",
+        grade: 60
+    }
+]
+
+export const skill2 = [
+    {
+        id: 7,
+        name: "MongoDB",
+        grade: 65
+    },
+    {
+        id: 8,
+        name: "PSQL",
+        grade: 70
+    },
+    {
+        id: 9,
+        name: "Sequelize",
+        grade: 50
+    },
+    {
+        id: 10,
+        name: "Solana Blockchain",
+        grade: 20
+    },
+    {
+        id: 11,
+        name: "ContextAPi",
+        grade: 80
+    },
+    {
+        id: 12,
+        name: "Redux",
+        grade: 40
+    }
 ]

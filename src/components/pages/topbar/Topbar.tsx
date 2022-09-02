@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import "./topbar.css";
-import { Phone, Email, FileDownload} from '@mui/icons-material';
+import { Phone, Email, FileDownload, LinkedIn, Twitter, GitHub} from '@mui/icons-material';
 import { saveAs } from "file-saver";
 import LoadingButton from '@mui/lab/LoadingButton';
+import { IconButton } from '@mui/material';
 
 const downloadBtn = {
   border: '0.5px solid #DC143C',
@@ -61,8 +62,71 @@ export default function Topbar({menuOpen, setMenuOpen}: MenuProps) {
             <span>+234 80 319 57690</span>
           </div>
           <div className="itemContainer">
-            <Email className="icon" />
-            <span>ayobamiajibola46@gmail.com</span>
+            <IconButton
+              href='#contact'
+              sx={{
+                color: "#262728",
+                borderRadius: "40px",
+                '&:hover': {
+                  color: '#DC143C'
+                }
+              }}
+            >
+              <Email className="icon" />
+              <span>ayobamiajibola46@gmail.com</span>
+            </IconButton>
+          </div>
+          <div className="socials">
+            <IconButton
+              sx={{
+                color: "#DC143C",
+                '&:hover': {
+                  color: '#262728'
+                }
+              }}
+              href='https://www.linkedin.com/in/ayobamiajibola/'
+            >
+              <LinkedIn
+                sx={{
+                  fontSize: "22px",
+                  marginRight: "5px"
+                }}
+              />
+            </IconButton>
+          </div>
+          <div className="socials">
+            <IconButton
+              sx={{
+                color: "#DC143C",
+                '&:hover': {
+                  color: '#262728'
+                }
+              }}
+              href='https://twitter.com/_ayurbami'
+            >
+              <Twitter
+                sx={{
+                  fontSize: "22px"
+                }}
+              />
+            </IconButton>
+          </div>
+          <div className="socials">
+            <IconButton
+              sx={{
+                color: "#DC143C",
+                '&:hover': {
+                  color: '#262728'
+                }
+              }}
+              href='https://github.com/AyobamiAjibola'
+            >
+              <GitHub
+                sx={{
+                  fontSize: "22px"
+                }}
+              />
+            </IconButton>
           </div>
         </div>
         <div className="right">

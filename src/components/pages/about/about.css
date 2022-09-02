@@ -12,11 +12,21 @@
   flex: 0.5;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .about .left {
+    background-color: #EEEEEE;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 .about .left .imgContainer {
   width: 700px;
   height: 700px;
   background-color: #EEEEEE;
   border-radius: 50%;
+  padding-top: 70px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,8 +36,10 @@
 @media (max-width: 768px) {
   .about .left .imgContainer {
     align-items: flex-start;
-    width: 500px;
+    width: 300px;
     height: 500px;
+    padding-top: 5px;
+    background-color: transparent;
   }
 }
 .about .left .imgContainer img {
@@ -75,8 +87,9 @@
 }
 @media (max-width: 768px) {
   .about .right .wrapper .wrap h3 {
-    font-size: 20px;
-    margin-bottom: 0;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: -10px;
   }
 }
 .about .right .wrapper .wrap h6 {
@@ -84,6 +97,12 @@
   color: #DC143C;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+@media (max-width: 768px) {
+  .about .right .wrapper .wrap h6 {
+    font-size: 15px;
+    margin-bottom: 0.8em;
+  }
 }
 .about .right .wrapper .wrap p {
   font-size: 18px;
@@ -102,9 +121,14 @@
 .about .right .wrapper .wrap .contact-me {
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .about .right .wrapper .wrap .contact-me {
+    margin-top: 10px;
+  }
+}
 .about .right .arrow {
   position: absolute;
-  bottom: 30px;
+  bottom: 45px;
   left: 40%;
 }
 .about .right .arrow .effect {

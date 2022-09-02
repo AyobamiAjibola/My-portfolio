@@ -2,12 +2,21 @@
 
 
 .footer {
-    background-color: $mainColor;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 
     .container{
-        color: white;;
+        margin-bottom: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p{
+            margin-top: 5px;
+            color: $textColor
+        }
     }
 }

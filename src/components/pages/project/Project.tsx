@@ -34,8 +34,8 @@ export default function Project() {
     open: false,
     pageCount: 0,
     itemOffset: 0,
-    itemsPerPage: 4,
-    datas: ([])
+    itemsPerPage: 6,
+    datas: data
   });
   const handleOpen = () => {
     setValues({...values, open: true})
@@ -44,10 +44,6 @@ export default function Project() {
     navigate('/');
     setValues({...values, open: false});
   };
-
-  useEffect(() => {
-    setValues({...values, datas: data})
-  })
 
   useEffect(() => {
     const endOffset = values.itemOffset + values.itemsPerPage;
@@ -66,9 +62,18 @@ export default function Project() {
                   {d.project_title.toUpperCase()}
                 </h3>
               <Link to={`/${d.project_title}`} style={{textDecoration: "none", zIndex: 1}} onClick={handleOpen}>
-                  <img
-                    crossOrigin="anonymous"
-                    src={d.img} alt="project" />
+                  {d.img &&
+                    <img
+                      crossOrigin="anonymous"
+                      src={d.img} alt="project"
+                    />
+                  }
+                  { !d.img && <img
+                      crossOrigin="anonymous"
+                      src={d.status === "done" ? "assets/loading.jpg" : "assets/under.jpg"}
+                      alt="project"
+                    />
+                  }
               </Link>
             </div>
           </div>
@@ -107,14 +112,26 @@ export default function Project() {
                           height: { sm: "20%", xs: "none" }
                         }}
                       >
-                      <img
-                        style={{
-                          width: "100%",
-                          height: '100%'
-                        }}
-                        crossOrigin="anonymous"
-                        src={d.img2} alt="project"
-                      />
+                      { d.img2 &&
+                        <img
+                          style={{
+                            width: "100%",
+                            height: '100%'
+                          }}
+                          crossOrigin="anonymous"
+                          src={d.img2} alt="project"
+                        />
+                      }
+                      { !d.img2 && <img
+                          style={{
+                            width: "100%",
+                            height: '100%'
+                          }}
+                          crossOrigin="anonymous"
+                          src={d.status === "done" ? "assets/loading.jpg" : "assets/under.jpg"}
+                          alt="project"
+                        />
+                      }
                       </Box><Typography
                         id="transition-modal-title"
                         variant="body2"

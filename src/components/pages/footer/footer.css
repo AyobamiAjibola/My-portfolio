@@ -1,9 +1,17 @@
 .footer {
-  background-color: #15023a;
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 .footer .container {
-  color: white;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .container p {
+  margin-top: 5px;
+  color: #262728;
 }/*# sourceMappingURL=footer.css.map */

@@ -13,11 +13,20 @@
         flex: 0.5;
         overflow: hidden;
 
+        @include mobile{
+            background-color: #EEEEEE;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
         .imgContainer{
             width: 700px;
             height: 700px;
             background-color: #EEEEEE;
             border-radius: 50%;
+            padding-top: 70px;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -26,8 +35,10 @@
 
             @include mobile{
                 align-items: flex-start;
-                width: 500px;
+                width: 300px;
                 height: 500px;
+                padding-top: 5px;
+                background-color: transparent;
             }
 
             img{
@@ -49,7 +60,6 @@
         .wrapper{
             width: 100%;
             height: 100%;
-            // padding-left: 30px;
             margin-left: 20px;
             display: flex;
             align-items: center;
@@ -75,8 +85,9 @@
                     color: $textColor;
 
                     @include mobile {
-                        font-size: 20px;
-                        margin-bottom: 0;
+                        font-size: 25px;
+                        margin-top: 10px;
+                        margin-bottom: -10px;
                     }
                 }
 
@@ -85,6 +96,11 @@
                     color: $mainColor;
                     margin-top: 1.5em;
                     margin-bottom: 1.5em;
+
+                    @include mobile {
+                        font-size: 15px;
+                        margin-bottom: 0.8em;
+                    }
                 }
                 p{
                     font-size: 18px;
@@ -102,12 +118,16 @@
 
                 .contact-me{
                     margin-top: 20px;
+
+                    @include mobile {
+                        margin-top: 10px;
+                    }
                 }
             }
         }
         .arrow{
             position: absolute;
-            bottom: 30px;
+            bottom: 45px;
             left: 40%;
 
             .effect{
