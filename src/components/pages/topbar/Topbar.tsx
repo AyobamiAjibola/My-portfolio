@@ -3,14 +3,16 @@ import "./topbar.css";
 import { Phone, Email, FileDownload, LinkedIn, Twitter, GitHub} from '@mui/icons-material';
 import { saveAs } from "file-saver";
 import LoadingButton from '@mui/lab/LoadingButton';
-import { IconButton } from '@mui/material';
+import { IconButton, Typography } from '@mui/material';
 
 const downloadBtn = {
   border: '0.5px solid #DC143C',
-  borderRadius: '18px',
+  borderRadius: '15px',
   p: 1.2,
+  width: '10rem',
   fontWeight: 600,
   cursor: 'pointer',
+  fontSize: '12px',
   color: '#DC143C',
   '&:hover': { color: 'white', backgroundColor: '#DC143C', fontWeight: 600 }
 };
@@ -51,7 +53,7 @@ export default function Topbar({menuOpen, setMenuOpen}: MenuProps) {
           <LoadingButton
             onClick={saveFile}
             sx={downloadBtn}
-            endIcon={<FileDownload />}
+            endIcon={<FileDownload sx={{display: {xs: 'none'}}}/>}
             loading={values.isLoading}
             loadingIndicator="Sign In..."
           >
@@ -67,6 +69,7 @@ export default function Topbar({menuOpen, setMenuOpen}: MenuProps) {
               sx={{
                 color: "#262728",
                 borderRadius: "40px",
+                display: {lg: 'contents', xs: 'none'},
                 '&:hover': {
                   color: '#DC143C'
                 }
@@ -88,8 +91,7 @@ export default function Topbar({menuOpen, setMenuOpen}: MenuProps) {
             >
               <LinkedIn
                 sx={{
-                  fontSize: "22px",
-                  marginRight: "5px"
+                  fontSize: "22px"
                 }}
               />
             </IconButton>

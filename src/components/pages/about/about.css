@@ -14,7 +14,8 @@
 }
 @media (max-width: 768px) {
   .about .left {
-    background-color: #EEEEEE;
+    flex: 0.4;
+    background-color: #FBE7EB;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -55,6 +56,11 @@
   flex: 0.5;
   position: relative;
   border-left: 1px solid #DDDDDD;
+}
+@media (max-width: 768px) {
+  .about .right {
+    flex: 0.6;
+  }
 }
 .about .right .wrapper {
   width: 100%;
@@ -121,15 +127,15 @@
 .about .right .wrapper .wrap .contact-me {
   margin-top: 20px;
 }
-@media (max-width: 768px) {
-  .about .right .wrapper .wrap .contact-me {
-    margin-top: 10px;
-  }
-}
 .about .right .arrow {
   position: absolute;
-  bottom: 45px;
+  bottom: 55px;
   left: 40%;
+}
+@media (max-width: 768px) {
+  .about .right .arrow {
+    display: none;
+  }
 }
 .about .right .arrow .effect {
   border: solid;

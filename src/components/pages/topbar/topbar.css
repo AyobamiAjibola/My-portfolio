@@ -41,6 +41,11 @@
   align-items: center;
   margin-left: 30px;
 }
+@media (max-width: 768px) {
+  .topbar .wrapper .left .socials {
+    margin-left: 5px;
+  }
+}
 .topbar .wrapper .right {
   display: flex;
   align-items: center;

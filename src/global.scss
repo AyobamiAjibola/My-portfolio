@@ -2,7 +2,6 @@ $mainColor:  #DC143C;
 $topbarColor:  #262728;
 $textColor: #262728;
 $paraColor: #585858;
-$bkColor: #FBE7EB;
 
 $width: 768px;
 
@@ -10,5 +9,5 @@ $width: 768px;
     @media (max-width: #{$width}){
         @content
     }
-}
+};
 

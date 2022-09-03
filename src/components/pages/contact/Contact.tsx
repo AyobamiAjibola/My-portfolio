@@ -30,7 +30,7 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
 });
 
 const btn = {
-  width: "40%",
+  width: {sm: "40%", xs: "60%"},
   height: {sm: "50px", xs: "40px"},
   padding: "5px 0px",
   borderRadius: "5px",
@@ -193,17 +193,19 @@ export default function Contact() {
                 >{errors.message.message}</Typography>)
             }
           </div>
-          <LoadingButton
-            type="submit"
-            onClick={handleSubmit(onSubmit)}
-            sx={btn}
-            endIcon={<Send />}
-            loading={values.isLoading}
-            loadingIndicator="Sending message..."
-            variant='contained'
-          >
-            Send Message
-          </LoadingButton>
+          {/* <div className='btnWrapper'> */}
+            <LoadingButton
+              type="submit"
+              onClick={handleSubmit(onSubmit)}
+              sx={btn}
+              endIcon={<Send />}
+              loading={values.isLoading}
+              loadingIndicator="Sending message..."
+              variant='contained'
+            >
+              Send Message
+            </LoadingButton>
+          {/* </div> */}
         </form>
       </div>
     </div>

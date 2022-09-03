@@ -14,7 +14,8 @@
         overflow: hidden;
 
         @include mobile{
-            background-color: #EEEEEE;
+            flex: 0.4;
+            background-color: #FBE7EB;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -55,6 +56,10 @@
         flex: 0.5;
         position: relative;
         border-left: 1px solid #DDDDDD;
+
+        @include mobile{
+            flex: 0.6;
+        }
 
         .wrapper{
             width: 100%;
@@ -117,17 +122,17 @@
 
                 .contact-me{
                     margin-top: 20px;
-
-                    @include mobile {
-                        margin-top: 10px;
-                    }
                 }
             }
         }
         .arrow{
             position: absolute;
-            bottom: 45px;
+            bottom: 55px;
             left: 40%;
+
+            @include mobile{
+                display: none;
+            }
 
             .effect{
                 border: solid;

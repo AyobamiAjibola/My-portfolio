@@ -44,6 +44,10 @@
                 display: flex;
                 align-items: center;
                 margin-left: 30px;
+
+                @include mobile {
+                    margin-left: 5px;
+                }
             }
         }
 
@@ -76,6 +80,7 @@
         color: $topbarColor;
 
         .hamburger{
+
             span{
                 &:first-child{
                     background-color: white;

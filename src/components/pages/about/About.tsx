@@ -1,15 +1,15 @@
 import React from 'react';
 import "./about.css";
 import Typewriter from "typewriter-effect";
-import { Button, IconButton } from '@mui/material';
+import { Box, Button, IconButton } from '@mui/material';
 import { KeyboardArrowDown, KeyboardArrowRight } from '@mui/icons-material';
 
 const contact = {
   border: '1px solid #676768',
   borderRadius: '18px',
-  p: {sm: 1, xs: 0.5},
-  fontWeight: {sm:600, xs: 400},
-  fontSize: {sm: 14, xs: 10},
+  p: 1,
+  fontWeight: 600,
+  fontSize: 14,
   cursor: 'pointer',
   color: '#3B3C3D',
   '&:hover': { color: '#DC143C', fontWeight: 700, borderColor: '#DC143C' }
@@ -27,8 +27,8 @@ export default function About() {
       <div className="right">
         <div className="wrapper">
           <div className="wrap">
-            <h3 style={{marginTop: "5px"}}>Ayobami </h3>
-            <h3>Ajibola</h3>
+            <h3 style={{marginTop: "5px"}}>Ayobami</h3>
+            <h3> Ajibola</h3>
             <h6>
               <Typewriter
                 onInit={(typewriter)=> {
