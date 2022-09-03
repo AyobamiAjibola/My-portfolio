@@ -10,7 +10,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: {sm: 400, xs: 300},
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -98,139 +98,139 @@ export default function Project() {
         }}
       >
         <Fade in={values.open}>
-            <Box sx={style}>
-              {currItems.map((d: any) => (
-                <Box key={d.id}>
-                  {d.project_title === id &&
-                    <>
-                      <Box
-                        sx={{
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          width: { sm: "100%", xs: "none" },
-                          height: { sm: "20%", xs: "none" }
+          <Box sx={style}>
+            {currItems.map((d: any) => (
+              <Box key={d.id}>
+                {d.project_title === id &&
+                  <>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        width: { sm: "100%", xs: "none" },
+                        height: { sm: "20%", xs: "none" }
+                      }}
+                    >
+                    { d.img2 &&
+                      <img
+                        style={{
+                          width: "100%",
+                          height: '100%'
                         }}
-                      >
-                      { d.img2 &&
-                        <img
-                          style={{
-                            width: "100%",
-                            height: '100%'
-                          }}
-                          crossOrigin="anonymous"
-                          src={d.img2} alt="project"
-                        />
-                      }
-                      { !d.img2 && <img
-                          style={{
-                            width: "100%",
-                            height: '100%'
-                          }}
-                          crossOrigin="anonymous"
-                          src={d.status === "done" ? "assets/loading.jpg" : "assets/under.jpg"}
-                          alt="project"
-                        />
-                      }
-                      </Box><Typography
-                        id="transition-modal-title"
-                        variant="body2"
-                        sx={{
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          mt: 1
-                        }}
-                      >
-                        {d.website}
-                      </Typography>
-                      <Typography
-                        id="transition-modal-description"
-                        variant="body2"
-                        sx={{
-                          mt: 1,
-                          fontSize: "12px",
-                          textAlign: "justify",
-                          textJustify: "inter-word",
-                          color: "#262728"
-                        }}
-                      >
-                        <b>Github:</b> {d.repo}
-                      </Typography>
-                      <Typography
-                        id="transition-modal-description"
-                        variant="body2"
-                        sx={{
-                          mt: 1,
-                          fontSize: "12px",
-                          textAlign: "justify",
-                          textJustify: "inter-word",
-                          color: "#262728"
-                        }}
-                      >
-                        <hr/>
-                        <b>Responsibility:</b> {d.work_done}
-                      </Typography>
-                      <Typography
-                        id="transition-modal-description"
-                        variant="body2"
-                        sx={{
-                          mt: 1,
-                          fontSize: "12px",
-                          textAlign: "justify",
-                          textJustify: "inter-word",
-                          color: "#262728"
-                        }}
-                      >
-                        <hr/>
-                        <b>Description:</b> {d.desc}
-                      </Typography>
-                      <Typography
-                        id="transition-modal-description"
-                        variant="body2"
-                        sx={{
-                          mt: 1,
-                          fontSize: "12px",
-                          textAlign: "justify",
-                          textJustify: "inter-word",
-                          color: "#262728"
-                        }}
-                      >
-                        <hr/>
-                        <b>Project Status:</b> {d.status.toUpperCase()}
-                      </Typography>
-                    </>
-                  }
-                </Box>
-              ))}
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center"
-                }}
-              >
-                <Button
-                  onClick={handleClose}
-                  sx={{
-                    color: "#DC143C",
-                    backgroundColor: "white",
-                    boxShadow: 5,
-                    border: "0.5 solid #DC143C",
-                    borderRadius: 2,
-                    marginTop: 2,
-                    marginBottom: 2,
-                    width: "40%",
-                    fontWeight: 600,
-                    '&:hover': {
-                      color: "white",
-                      backgroundColor: "#DC143C",
-                      border: "none"
+                        crossOrigin="anonymous"
+                        src={d.img2} alt="project"
+                      />
                     }
-                  }}
-                >close</Button>
+                    { !d.img2 && <img
+                        style={{
+                          width: "100%",
+                          height: '100%'
+                        }}
+                        crossOrigin="anonymous"
+                        src={d.status === "done" ? "assets/loading.jpg" : "assets/under.jpg"}
+                        alt="project"
+                      />
+                    }
+                    </Box><Typography
+                      id="transition-modal-title"
+                      variant="body2"
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        mt: 1
+                      }}
+                    >
+                      {d.website}
+                    </Typography>
+                    <Typography
+                      id="transition-modal-description"
+                      variant="body2"
+                      sx={{
+                        mt: 1,
+                        fontSize: "12px",
+                        textAlign: "justify",
+                        textJustify: "inter-word",
+                        color: "#262728"
+                      }}
+                    >
+                      <b>Github:</b> {d.repo}
+                    </Typography>
+                    <Typography
+                      id="transition-modal-description"
+                      variant="body2"
+                      sx={{
+                        mt: 1,
+                        fontSize: "12px",
+                        textAlign: "justify",
+                        textJustify: "inter-word",
+                        color: "#262728"
+                      }}
+                    >
+                      <hr/>
+                      <b>Responsibility:</b> {d.work_done}
+                    </Typography>
+                    <Typography
+                      id="transition-modal-description"
+                      variant="body2"
+                      sx={{
+                        mt: 1,
+                        fontSize: "12px",
+                        textAlign: "justify",
+                        textJustify: "inter-word",
+                        color: "#262728"
+                      }}
+                    >
+                      <hr/>
+                      <b>Description:</b> {d.desc}
+                    </Typography>
+                    <Typography
+                      id="transition-modal-description"
+                      variant="body2"
+                      sx={{
+                        mt: 1,
+                        fontSize: "12px",
+                        textAlign: "justify",
+                        textJustify: "inter-word",
+                        color: "#262728"
+                      }}
+                    >
+                      <hr/>
+                      <b>Project Status:</b> {d.status.toUpperCase()}
+                    </Typography>
+                  </>
+                }
               </Box>
+            ))}
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
+              <Button
+                onClick={handleClose}
+                sx={{
+                  color: "#DC143C",
+                  backgroundColor: "white",
+                  boxShadow: 5,
+                  border: "0.5 solid #DC143C",
+                  borderRadius: 2,
+                  marginTop: 2,
+                  marginBottom: 2,
+                  width: "40%",
+                  fontWeight: 600,
+                  '&:hover': {
+                    color: "white",
+                    backgroundColor: "#DC143C",
+                    border: "none"
+                  }
+                }}
+              >close</Button>
             </Box>
+          </Box>
         </Fade>
       </Modal>
     </div>
