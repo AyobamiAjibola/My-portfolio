@@ -58,7 +58,7 @@ export const data = [
         id: 6,
         project_title: "PO-Smart-App",
         work_done: "I am part of the development team that is responsible for the backend development of this project. The stack we are using includes NodeJS and express for the server side, Typescript, JOI for server side validation, MongoDB for the database, and JWT for authentication and authorization.",
-        desc: "This solution validates voting results been posted my INEC officials against the results posted by LP party agents. Its simply an app for the delegates to report live happenings of the election realtime for transparency sake.",
+        desc: "This solution validates voting results been posted by INEC officials against the results posted by LP party agents. Its simply an app for the delegates to report live happenings of the election realtime for transparency sake.",
         repo: "https://github.com/PO2023/POapp.git",
         status: "in progress",
         website: "",
