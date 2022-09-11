@@ -108,48 +108,48 @@ export const skill = [
         id: 6,
         name: "Typescript",
         grade: 60
+    },
+    {
+        id: 7,
+        name: "REST API",
+        grade: 70
     }
 ]
 
 export const skill2 = [
     {
-        id: 7,
+        id: 8,
         name: "MongoDB",
         grade: 70
     },
     {
-        id: 8,
+        id: 9,
         name: "PSQL",
         grade: 70
     },
     {
-        id: 9,
+        id: 10,
         name: "Sequelize",
         grade: 75
     },
     {
-        id: 10,
+        id: 11,
         name: "Solana Blockchain",
         grade: 20
     },
     {
-        id: 11,
+        id: 12,
         name: "React ContextAPi",
         grade: 80
     },
     {
-        id: 12,
+        id: 13,
         name: "Redux",
         grade: 40
     },
     {
-        id: 13,
+        id: 14,
         name: "AWS",
         grade: 50
-    },
-    {
-        id: 14,
-        name: "REST API",
-        grade: 70
     }
 ]
