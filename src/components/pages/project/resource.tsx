@@ -45,12 +45,12 @@ export const data = [
     },
     {
         id: 5,
-        project_title: "rimplay",
+        project_title: "rimaplay",
         work_done: "My primary responsibility as a team member who oversees the project's use of AWS is to establish, develop, and maintain the project's cloud infrastructure.",
-        desc: "Rimplay is a video streaming application",
+        desc: "Rimaplay is a video streaming application",
         repo: "https://github.com/amobihq/skyline.git",
         status: "in progress",
-        website: "rimplay.com",
+        website: "rimaplay.com",
         img: "assets/rimplay.jpg",
         img2: "assets/rimplay2.jpg"
     },
