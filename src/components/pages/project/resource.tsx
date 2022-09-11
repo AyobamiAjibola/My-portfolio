@@ -115,7 +115,7 @@ export const skill2 = [
     {
         id: 7,
         name: "MongoDB",
-        grade: 65
+        grade: 70
     },
     {
         id: 8,
@@ -125,7 +125,7 @@ export const skill2 = [
     {
         id: 9,
         name: "Sequelize",
-        grade: 50
+        grade: 75
     },
     {
         id: 10,
@@ -134,12 +134,22 @@ export const skill2 = [
     },
     {
         id: 11,
-        name: "ContextAPi",
+        name: "React ContextAPi",
         grade: 80
     },
     {
         id: 12,
         name: "Redux",
         grade: 40
+    },
+    {
+        id: 13,
+        name: "AWS",
+        grade: 50
+    },
+    {
+        id: 14,
+        name: "REST API",
+        grade: 70
     }
 ]
