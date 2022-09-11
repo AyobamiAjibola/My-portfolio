@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10px;
 
   @include mobile{
     justify-content: space-around;
@@ -13,31 +14,16 @@
   .title{
     padding-bottom: -5px;
     height: 80px;
+    overflow: hidden;
 
     h1 {
       font-size: 50px;
       color: $textColor;
       padding-top: -2px;
-    }
-  }
 
-  .container {
-    width: 100%;
-    height: 80%;
-    display: flex;
-
-    @include mobile{
-      height: 100%;
-    }
-
-    .right{
-      flex: 0.5;
-      overflow: hidden;
-    }
-
-    .left{
-      flex: 0.5;
-      overflow: hidden;
+      @include mobile{
+        font-size: 40px;
+      }
     }
   }
 }

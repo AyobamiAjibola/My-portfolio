@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10px;
 }
 @media (max-width: 768px) {
   .skill {
@@ -12,27 +13,15 @@
 .skill .title {
   padding-bottom: -5px;
   height: 80px;
+  overflow: hidden;
 }
 .skill .title h1 {
   font-size: 50px;
   color: #262728;
   padding-top: -2px;
 }
-.skill .container {
-  width: 100%;
-  height: 80%;
-  display: flex;
-}
 @media (max-width: 768px) {
-  .skill .container {
-    height: 100%;
+  .skill .title h1 {
+    font-size: 40px;
   }
-}
-.skill .container .right {
-  flex: 0.5;
-  overflow: hidden;
-}
-.skill .container .left {
-  flex: 0.5;
-  overflow: hidden;
 }/*# sourceMappingURL=skill.css.map */
