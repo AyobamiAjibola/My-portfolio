@@ -82,37 +82,44 @@ export const skill = [
     {
         id: 1,
         name: "Javascript",
-        grade: 80
+        // grade: 80
+        grade: 100
     },
     {
         id: 2,
         name: "ReactJS",
-        grade: 85,
+        // grade: 85
+        grade: 100
     },
     {
         id: 3,
         name: "NodeJS",
-        grade: 80
+        // grade: 80
+        grade: 100
     },
     {
         id: 4,
         name: "HTML",
-        grade: 95
+        // grade: 95
+        grade: 100
     },
     {
         id: 5,
         name: "CSS/SCSS",
-        grade: 90
+        // grade: 90
+        grade: 100
     },
     {
         id: 6,
         name: "Typescript",
-        grade: 60
+        // grade: 60
+        grade: 100
     },
     {
         id: 7,
         name: "REST API",
-        grade: 70
+        // grade: 70
+        grade: 100
     }
 ]
 
@@ -120,36 +127,43 @@ export const skill2 = [
     {
         id: 8,
         name: "MongoDB",
-        grade: 70
+        // grade: 70
+        grade: 100
     },
     {
         id: 9,
         name: "PSQL",
-        grade: 70
+        // grade: 70
+        grade: 100
     },
     {
         id: 10,
         name: "Sequelize",
-        grade: 75
+        // grade: 75
+        grade: 100
     },
     {
         id: 11,
         name: "Solana Blockchain",
-        grade: 20
+        // grade: 20
+        grade: 100
     },
     {
         id: 12,
         name: "React ContextAPi",
-        grade: 80
+        // grade: 80
+        grade: 100
     },
     {
         id: 13,
         name: "Redux",
-        grade: 40
+        // grade: 40
+        grade: 100
     },
     {
         id: 14,
         name: "AWS",
-        grade: 50
+        // grade: 50
+        grade: 100
     }
 ]
