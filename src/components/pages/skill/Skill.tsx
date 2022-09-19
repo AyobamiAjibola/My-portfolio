@@ -42,9 +42,9 @@ export default function Skill() {
             {skill.map((d: any) => (
               <Box sx={{ width: '80%' }} key={d.id}>
                 <Typography
-                  variant='body2'
+                  variant='body1'
                   sx={{
-                    marginTop: {md:"1.5rem", sm: "0.8rem", xs: "0.8rem"},
+                    marginTop: {md:"2rem", sm: "0.8rem", xs: "0.8rem"},
                     fontWeight: 600,
                     color: "#585858"
                   }}
@@ -62,9 +62,9 @@ export default function Skill() {
             {skill2.map((d: any) => (
               <Box sx={{ width: '80%' }} key={d.id}>
                 <Typography
-                  variant='body2'
+                  variant='body1'
                   sx={{
-                    marginTop: {md:"1.5rem", sm: "0.8rem", xs: "0.8rem"},
+                    marginTop: {md:"2rem", sm: "0.8rem", xs: "0.8rem"},
                     fontWeight: 600,
                     color: "#585858"
                   }}
