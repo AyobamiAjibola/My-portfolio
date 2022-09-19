@@ -35,17 +35,18 @@ export default function Skill() {
           sx={{
             width: "100%",
             display: "flex",
-            justifyContent: "center"
+            justifyContent: "center",
+            marginTop: {sm: "0px", xs:"-80px"}
           }}
         >
           <Grid md={6} xs={12} sx={left} item>
             {skill.map((d: any) => (
               <Box sx={{ width: '80%' }} key={d.id}>
                 <Typography
-                  variant='body1'
                   sx={{
                     marginTop: {md:"2rem", sm: "0.8rem", xs: "0.8rem"},
                     fontWeight: 600,
+                    fontSize: {md:"17px", sm: "14px", xs: "14px"},
                     color: "#585858"
                   }}
                 >
@@ -66,6 +67,7 @@ export default function Skill() {
                   sx={{
                     marginTop: {md:"2rem", sm: "0.8rem", xs: "0.8rem"},
                     fontWeight: 600,
+                    fontSize: {md:"17px", sm: "14px", xs: "14px"},
                     color: "#585858"
                   }}
                 >
