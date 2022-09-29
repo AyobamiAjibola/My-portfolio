@@ -23,14 +23,14 @@ export const data = [
     },
     {
         id: 3,
-        project_title: "restaurant-POS-system",
-        work_done: "I was a member of the development team that created this offline point of sale system for restaurants. The frontend and database structure were my main contributions to this project. HTML and CSS were used for the frontend, PHP for the backend logic, and Mysql for the database.",
-        desc: "This is a restaurant POS system that helps with sales, inventory management, and finances management. It was deployed in GEM House, a restaurant in Wuse 2 Abuja, Nigeria.",
-        repo: "https://github.com/AyobamiAjibola/POS-System.git",
+        project_title: "My Portfolio",
+        work_done: "This is a react static project hosted of vercel. No backend codes, just react, scss, and mui",
+        desc: "My Portfolio",
+        repo: "https://github.com/AyobamiAjibola/My-portfolio.git",
         status: "done",
-        website: "",
-        img: "",
-        img2: ""
+        website: "https://ayobami-ajibola.vercel.app/",
+        img: "assets/portfolio.jpg",
+        img2: "assets/portfolio2.jpg"
     },
     {
         id: 4,
@@ -67,6 +67,28 @@ export const data = [
     },
     {
         id: 7,
+        project_title: "restaurant-POS-system",
+        work_done: "I was a member of the development team that created this offline point of sale system for restaurants. The frontend and database structure were my main contributions to this project. HTML and CSS were used for the frontend, PHP for the backend logic, and Mysql for the database.",
+        desc: "This is a restaurant POS system that helps with sales, inventory management, and finances management. It was deployed in GEM House, a restaurant in Wuse 2 Abuja, Nigeria.",
+        repo: "https://github.com/AyobamiAjibola/POS-System.git",
+        status: "done",
+        website: "",
+        img: "",
+        img2: ""
+    },
+    {
+        id: 8,
+        project_title: "Gadget-hub-blog",
+        work_done: "Backend Stack(NodeJs, Express, PSQL, Sequelize, JWT, Joi) ----- Frontend (ReactJs, MUI, Redux)",
+        desc: "GHB is a blog that features posts on the most recent technological developments, information about gadgets, and comparisons to help readers make decisions.",
+        repo: "https://github.com/AyobamiAjibola/Gadget-hub-blog.git",
+        status: "in progress",
+        website: "",
+        img: "",
+        img2: ""
+    },
+    {
+        id: 9,
         project_title: "Foodo",
         work_done: "I'm a lead developer on the project's development team, and part of my responsibilities is to create the models, apis, and backend code. Along with overseeing the development of the mobile apps, I am also in charge of the web apps. The stack we are using for this project includes, Typescript, Node and express for server side, Joi for validation, Sequelize PSQL for the database, JWT for authentication and authorization, ReactJS and MUI for UI, and flutter for the mobile apps",
         desc: "Foodo is a food delivery app.",

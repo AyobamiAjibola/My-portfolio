@@ -71,13 +71,13 @@
   color: #262728;
 }
 .topbar.active .hamburger span:first-child {
-  background-color: white;
+  background-color: #DC143C;
   transform: rotate(45deg);
 }
 .topbar.active .hamburger span:nth-child(2) {
   opacity: 0;
 }
 .topbar.active .hamburger span:last-child {
-  background-color: white;
+  background-color: #DC143C;
   transform: rotate(-45deg);
 }/*# sourceMappingURL=topbar.css.map */
