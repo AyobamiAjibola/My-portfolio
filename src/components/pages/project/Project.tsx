@@ -59,8 +59,8 @@ export default function Project() {
           <div className="item" key={d.id}>
             <div className="wrapper">
               <h3>
-                  {d.project_title.toUpperCase()}
-                </h3>
+                {d.project_title.toUpperCase()}
+              </h3>
               <Link to={`/${d.project_title}`} style={{textDecoration: "none", zIndex: 1}} onClick={handleOpen}>
                   {d.img &&
                     <img

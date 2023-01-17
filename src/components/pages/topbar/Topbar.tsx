@@ -3,7 +3,7 @@ import "./topbar.css";
 import { Phone, Email, FileDownload, LinkedIn, Twitter, GitHub} from '@mui/icons-material';
 import { saveAs } from "file-saver";
 import LoadingButton from '@mui/lab/LoadingButton';
-import { IconButton, Typography } from '@mui/material';
+import { IconButton } from '@mui/material';
 
 const downloadBtn = {
   border: '0.5px solid #DC143C',
