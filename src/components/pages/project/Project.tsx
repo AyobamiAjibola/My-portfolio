@@ -142,7 +142,7 @@ export default function Project() {
                         mt: 1
                       }}
                     >
-                      {d.website}
+                      {d.website ? <span style={{fontWeight: 600, marginBottom: '10px'}}><a href={d.website}>{d.website}</a></span> : <span style={{fontWeight: 600, marginBottom: '10px'}}>{d.repo}</span>}
                     </Typography>
                     <Typography
                       id="transition-modal-description"
@@ -155,7 +155,7 @@ export default function Project() {
                         color: "#262728"
                       }}
                     >
-                      <b>Github:</b> {d.repo}
+                      <b>Role:</b> {d.role}
                     </Typography>
                     <Typography
                       id="transition-modal-description"
