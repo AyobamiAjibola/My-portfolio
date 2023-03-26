@@ -1,11 +1,11 @@
 export const data = [
     {
         id: 1,
-        project_title: "jiffix-autohyve",
+        project_title: "jiffix-autohyve-workshop",
         work_done: "This project handles workshop backend functionality, allowing workshop users to manage estimates, invoices, and expenses, as well as view monthly analytics. I worked on the expenses functionality, which allows workshop users to generate expenses and track payments, as well as view and edit expense details. This project required me to work on both the backend and the frontend. I modified some of the backend components and APIs, as well as the frontend expenses component; additionally, part of my responsibilities is to make the entire product mobile responsive. The technologies used includes, Nodejs, Reactjs, Typescript, Mongodb, Sequelize, Redis, JOI, JWT, Redux, Material UI",
         desc: "Jiffix autohyve is a robust operating system (OS) for the automotive after-sales sector in Africa. The goal of jiffix autohyve is Creating Infrastructures that deliver professional and quality automotive services, and the technology for full life-cycle management of all vehicles’ inspections, maintenance & repairs. jiffix autohyve connect each vehicle to the cloud, with tools and technology that ensures safe, reliable and unhindered mobility for all.",
         repo: "https://github.com/Jiffix-Technologies/AutoHyve-pdms-gateway.git",
-        status: "done",
+        status: "in progress",
         website: "http://18.222.133.239:8083/",
         img: "assets/jiffix-gateway1.jpg",
         img2: "assets/jiffix-gateway2.jpg",
