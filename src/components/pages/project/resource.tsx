@@ -6,7 +6,7 @@ export const data = [
         desc: "Jiffix autohyve is a robust operating system (OS) for the automotive after-sales sector in Africa. The goal of jiffix autohyve is Creating Infrastructures that deliver professional and quality automotive services, and the technology for full life-cycle management of all vehicles’ inspections, maintenance & repairs. jiffix autohyve connect each vehicle to the cloud, with tools and technology that ensures safe, reliable and unhindered mobility for all.",
         repo: "https://github.com/Jiffix-Technologies/AutoHyve-pdms-gateway.git",
         status: "in progress",
-        website: "http://18.222.133.239:8083/",
+        website: "https://pdms.jiffixtech.com/",
         img: "assets/jiffix-gateway1.jpg",
         img2: "assets/jiffix-gateway2.jpg",
         role: "Full Stack Developer"
