@@ -30,7 +30,7 @@ export const data = [
         desc: "Esun Ekiti is a small town in Nigeria. This project's objectives include spreading awareness of Esun's rich history and culture as well as monitoring and informing community development initiatives. additionally, to educate the public about the activities and events taking place in Esun Ekiti.",
         repo: "https://github.com/AyobamiAjibola/esun-ekiti.git",
         status: "done",
-        website: "www.esun-ekiti.ng",
+        website: "www.esunekiti.ng",
         img: "assets/esun1.jpg",
         img2: "assets/esun2.jpg",
         role: "Full Stack Developer"
